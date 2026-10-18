@@ -2,15 +2,15 @@ print("==== ALLOWANCE REPORT====")
  
 
 name = input("enter student name: ")
-weekly = float(input("enter wekly allowance: "))
+weekly = int(input("enter wekly allowance: "))
 transport = int(input("enter transportion cost: "))
 food = int(input("enter food expenses: "))
-school = (input("enter school supplies cost: "))
+school = int(input("enter school supplies cost: "))
 other = int(input("enter other expense: "))
 
 total_weekly = transport + food + school - other
 remaining = weekly - total_weekly
-average = total_weekly / 7
+average = total_weekly / 4
 
 print("student name:", name)
 print("total expense:", total_weekly)
